@@ -1,4 +1,8 @@
 import './styles.css'
+import schoolBag from '../../assets/schoolBag.png';
+import cart from '../../assets/cart.png';
+import logo from '../../assets/logo.png';
+import school from '../../assets/school.png';
 
 const HowItWorks = () => {
     return (
@@ -9,7 +13,38 @@ const HowItWorks = () => {
             </div>
 
             <div className="howItWorksBody">
-                {/* LEFT – Steps */}
+                {/* LEFT – Image */}
+                <div className="stepsImage">
+                    <div className="imageDecoration">
+                        <span className="ring ring1"></span>
+                        <span className="ring ring2"></span>
+                        <span className="ring ring3"></span>
+
+                        {/* floating icons */}
+                        <div className="floatingIcon icon1">
+                            <img src={schoolBag} alt="school bag" />
+                        </div>
+                        <div className="floatingIcon icon2">
+                            <img src={school} alt="cart" />
+                        </div>
+                        <div className="floatingIcon icon3">
+                            <img src={schoolBag} alt="school" />
+                        </div>
+                        <div className="floatingIcon icon4">
+                            <img src={school} alt="How Varse works" />
+                        </div>
+                        <div className="floatingIcon icon5">
+                            <img src={cart} alt="How Varse works" />
+                        </div>
+                        <div className="floatingIcon icon6">
+                            <img src={cart} alt="How Varse works" />
+                        </div>
+
+                        <img className="mainImage" src={logo} alt="How Varse works" />
+                    </div>
+                </div>
+
+                {/* RIGHT – Steps */}
                 <div className="steps">
                     {[
                         {
@@ -41,11 +76,6 @@ const HowItWorks = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-
-                {/* RIGHT – Image */}
-                <div className="stepsImage">
-                    <img src="/images/varse-how-it-works.png" alt="How Varse works" />
                 </div>
             </div>
 
