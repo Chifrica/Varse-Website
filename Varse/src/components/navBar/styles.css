@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #FFFFFF;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 17px;
+}
+
+.navbar-logo {
+    height: 2rem;
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1rem;
+    background-color: #FFF7ED;
+    border-radius: 17px;
+    padding: 16px 1rem;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.navbar-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-button {
+    background-color: #FF8800;
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 17px;
+}

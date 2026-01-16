@@ -1,0 +1,13 @@
+
+.featuresHeaderTxt {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.features-cards {
+    flex-direction: row;
+}
+
+.features-card {
+    border-width: 1rem;
+}

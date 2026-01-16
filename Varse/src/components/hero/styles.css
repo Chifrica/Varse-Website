@@ -1,0 +1,13 @@
+#root {
+    color: #000
+}
+
+.txt {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.subTxt {
+    font-size: 1rem;
+    color: gray;
+}
