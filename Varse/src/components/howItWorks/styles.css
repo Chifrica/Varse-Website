@@ -1,0 +1,143 @@
+.howItWorks {
+  padding: 80px 6%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.howItWorksHeader {
+  /* text-align: left; */
+  /* Changed from center */
+  margin-bottom: 60px;
+}
+
+.howItWorksHeader h2 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.howItWorksHeader p {
+  font-size: 1.2rem;
+  color: #666;
+  /* max-width: 500px; */
+}
+
+/* BODY */
+.howItWorksBody {
+  display: flex;
+  gap: 40px;
+  /* Reduced gap */
+  align-items: flex-start;
+}
+
+/* STEPS */
+.steps {
+  flex: 1.2;
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+  /* Reduced gap between number and content */
+  position: relative;
+
+  /* align-items: flex-start; */
+}
+
+/* LEFT NUMBER COLUMN */
+.stepIndicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: 2rem;
+}
+
+.stepNumber {
+  width: 44px;
+  /* Slightly adjusted size */
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  /* Perfect circle */
+  background-color: #ff8c00;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* DASHED LINE */
+.stepLine {
+  width: 2px;
+  flex-grow: 1;
+  margin: 8px 0;
+  border-left: 2px dashed #6B7280;
+}
+
+/* CONTENT */
+.stepContent {
+  text-align: left;
+  margin-left: 1rem;
+  /* padding-bottom: 32px; */
+}
+
+.stepContent h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.stepContent p {
+  color: #6B7280;
+  line-height: 1.6;
+  max-width: 100%;
+  font-size: 1.2rem;
+}
+
+/* IMAGE */
+.stepsImage {
+  flex: 1;
+  position: sticky;
+  top: 120px;
+}
+
+.stepsImage img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+  .howItWorksBody {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .howItWorksHeader {
+    text-align: center;
+  }
+
+  .howItWorksHeader p {
+    margin: 0 auto;
+  }
+
+  .howItWorksBody {
+    flex-direction: column-reverse;
+    /* Put image at bottom on mobile */
+  }
+
+  .stepsImage {
+    position: relative;
+    top: 0;
+    margin-top: 40px;
+  }
+
+  .stepContent p {
+    max-width: 100%;
+  }
+}
