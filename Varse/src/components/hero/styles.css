@@ -1,13 +1,132 @@
 #root {
-    color: #000
+    background-color: rgba(255, 247, 237, 1);
+    color: #111;
+}
+
+.hero {
+    padding-left: 6%;
+    padding-right: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.heroText {
+    max-width: 720px;
 }
 
 .txt {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.txt span {
+    color: #ff8800;
 }
 
 .subTxt {
-    font-size: 1rem;
-    color: gray;
+    font-size: 1.05rem;
+    color: #6b7280;
+    margin: 16px 0 28px;
+}
+
+.storeButtons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.storeButtons img {
+    height: 44px;
+    cursor: pointer;
+}
+
+.heroVisual {
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+}
+
+.phoneGlow {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: rgba(233, 130, 13);
+    filter: blur(60px);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.phoneImage {
+    width: 150%;
+    z-index: 2;
+    height: auto;
+}
+
+.floatingCard {
+    position: absolute;
+    background: #fff;
+    padding: 12px 16px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.85rem;
+    z-index: 3;
+    max-width: 220px;
+}
+
+.floatingCard strong {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.floatingCard p {
+    color: #6b7280;
+    font-size: 0.75rem;
+}
+
+.floatingCard.left.top {
+    left: -35%;
+    top: 40px;
+}
+
+.floatingCard.right.top {
+    right: -35%;
+    top: 70px;
+}
+
+.floatingCard.left.bottom {
+    left: -20%;
+    bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .txt {
+        font-size: 2.2rem;
+    }
+
+    .heroVisual {
+        margin-top: 60px;
+    }
+
+    .phoneImage {
+        width: 220px;
+    }
+
+    .phoneGlow {
+        width: 260px;
+        height: 260px;
+    }
+
+    .floatingCard {
+        display: none;
+        /* clean mobile look */
+    }
 }
