@@ -2,10 +2,13 @@ import NavBar from "../navBar";
 import "./styles.css";
 import iphone from '../../assets/iPhone 13.png'
 import playstore from '../../assets/playstore.png'
+import cartColored from '../../assets/cartColored.png';
+import bike from '../../assets/bike.png';
+import school from '../../assets/school.png';
 
 const Hero = () => {
     return (
-        <>
+        <div className="hero-container">
             <NavBar />
 
             <section className="hero">
@@ -39,20 +42,33 @@ const Hero = () => {
 
                     {/* Floating cards */}
                     <div className="floatingCard left top">
-                        🛒 <div><strong>Student Marketplace</strong><p>Buy & sell with students</p></div>
+                        <img src={cartColored} alt="" />
+                        <div>
+                            <strong>Student Marketplace</strong>
+                            <p>Buy & sell with students</p>
+                        </div>
                     </div>
 
                     <div className="floatingCard right top">
-                        🚚 <div><strong>Gas Refill</strong><p>Fast, safe gas delivery</p></div>
+                        <img src={bike} />
+                        <div>
+                            <strong>Gas Refill</strong>
+                            <p>Fast, safe gas delivery</p>
+                        </div>
                     </div>
 
                     <div className="floatingCard left bottom">
-                        🍔 <div><strong>Food & Snacks</strong><p>Order fast on campus</p></div>
+                        <img src={school} />
+                        <div>
+                            <strong>Food & Snacks</strong>
+                            <p>Order fast on campus</p>
+                        </div>
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     );
+
 };
 
 export default Hero;

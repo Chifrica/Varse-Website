@@ -5,6 +5,9 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 17px;
+    margin: 0 8%;
+    position: relative;
+    z-index: 1000;
 }
 
 .navbar-logo {
@@ -12,19 +15,26 @@
     width: auto;
 }
 
+.navbar img {
+    height: 70px;
+    width: 70px;
+}
+
+/* Desktop Links */
 .navbar-links {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     background-color: #FFF7ED;
     border-radius: 17px;
-    padding: 16px 1rem;
-    margin-right: 30px;
-    margin-left: 30px;
+    padding: 16px 4rem;
+    transition: 0.3s ease;
 }
 
 .navbar-link {
     color: #000000;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .navbar-button {
@@ -33,4 +43,100 @@
     border: none;
     padding: 1rem 1.5rem;
     border-radius: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Visibility Helpers */
+.mobile-only {
+    display: none;
+}
+
+/* Hamburger Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: 0.3s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .navbar-links {
+        padding: 16px 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: 0 4%;
+        margin-bottom: 1rem;
+        padding: 0.5rem 0.8rem;
+        background-color: rgba(255, 247, 237, 1);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar-links {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        z-index: 999;
+        gap: 2rem;
+    }
+
+    .navbar-links.active {
+        left: 0;
+    }
+
+    .navbar-link {
+        font-size: 24px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .navbar-logo {
+        position: relative;
+        z-index: 1001;
+    }
 }

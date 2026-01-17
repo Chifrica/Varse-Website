@@ -9,7 +9,7 @@ const HowItWorks = () => {
         <section className="howItWorks">
             <div className="howItWorksHeader">
                 <h2>How It Works?</h2>
-                <p>Everything you need on campus, in just a few steps.</p>
+                <p>Everything you need on campus, in just a few simple steps.</p>
             </div>
 
             <div className="howItWorksBody">

@@ -8,6 +8,8 @@
 .howItWorksHeader {
   /* text-align: left; */
   /* Changed from center */
+  text-align: center;
+  color: #000;
   margin-bottom: 60px;
 }
 
@@ -274,17 +276,34 @@
 }
 
 @media (max-width: 768px) {
+  .howItWorks {
+    padding: 10px 6%;
+  }
+
   .howItWorksHeader {
     text-align: center;
   }
 
+  .howItWorksHeader h2 {
+    font-size: 1.5rem;
+  }
+
   .howItWorksHeader p {
     margin: 0 auto;
+    font-size: 1.2rem;
   }
 
   .howItWorksBody {
     flex-direction: column;
     /* Put image at bottom on mobile */
+  }
+
+  .stepContent h3 {
+    font-size: 1.5rem;
+  }
+
+  .stepContent p {
+    font-size: 1.1rem;
   }
 
   .stepsImage {

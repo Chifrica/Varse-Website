@@ -1,6 +1,7 @@
-#root {
+.hero-container {
     background-color: rgba(255, 247, 237, 1);
-    color: #111;
+    width: 100%;
+    padding-top: 1.5%;
 }
 
 .hero {
@@ -17,9 +18,10 @@
 }
 
 .txt {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 600;
     line-height: 1.2;
+    color: #000;
 }
 
 .txt span {
@@ -50,13 +52,16 @@
     max-width: 380px;
     display: flex;
     justify-content: center;
+    margin-bottom: 15%;
 }
 
 .phoneGlow {
     position: absolute;
     width: 420px;
     height: 420px;
-    background: rgba(233, 130, 13);
+    background: radial-gradient(circle,
+            rgba(255, 136, 0, 0.18) 18%,
+            rgba(255, 136, 0, 1) 100%);
     filter: blur(60px);
     border-radius: 50%;
     z-index: 1;
@@ -71,20 +76,29 @@
 .floatingCard {
     position: absolute;
     background: #fff;
-    padding: 12px 16px;
+    padding: 4px 40px;
     border-radius: 14px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     font-size: 0.85rem;
-    z-index: 3;
+    z-index: 5;
     max-width: 220px;
+    text-align: left;
+    color: #000;
+}
+
+.floatingCard img {
+    width: 30px;
+    height: 50px;
 }
 
 .floatingCard strong {
     display: block;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+    margin-bottom: -10px;
+    margin-top: 5px;
 }
 
 .floatingCard p {
@@ -93,40 +107,95 @@
 }
 
 .floatingCard.left.top {
-    left: -35%;
-    top: 40px;
+    left: -55%;
+    top: 60px;
+    rotate: -6deg;
 }
 
 .floatingCard.right.top {
-    right: -35%;
-    top: 70px;
+    right: -50%;
+    top: 100px;
+    rotate: 5deg;
 }
 
 .floatingCard.left.bottom {
-    left: -20%;
-    bottom: 20px;
+    left: -10%;
+    bottom: -50px;
+    rotate: 5deg;
 }
 
 @media (max-width: 768px) {
+    .hero-container {
+        padding-top: 30px;
+    }
+
+    .hero {
+        padding-top: 0px;
+    }
+
     .txt {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
+    }
+
+    .subTxt {
+        font-size: 1rem;
+        padding: 0 10px;
     }
 
     .heroVisual {
-        margin-top: 60px;
+        margin-top: 30%;
+        max-width: 280px;
+        /* Constrain visual width on mobile */
     }
 
     .phoneImage {
-        width: 220px;
+        width: 180px;
     }
 
     .phoneGlow {
-        width: 260px;
-        height: 260px;
+        width: 220px;
+        height: 120px;
     }
 
     .floatingCard {
-        display: none;
-        /* clean mobile look */
+        display: flex;
+        /* Show cards on mobile */
+        padding: 5px 12px;
+        gap: 8px;
+        font-size: 0.7rem;
+        max-width: 140px;
+    }
+
+    .floatingCard img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .floatingCard strong {
+        font-size: 0.65rem;
+        margin-top: 0;
+        margin-bottom: -8px;
+    }
+
+    .floatingCard p {
+        font-size: 0.6rem;
+    }
+
+    .floatingCard.left.top {
+        left: -10%;
+        top: -50px;
+        rotate: -4deg;
+    }
+
+    .floatingCard.right.top {
+        right: -20%;
+        top: 40px;
+        rotate: 10deg;
+    }
+
+    .floatingCard.left.bottom {
+        left: -0%;
+        bottom: -40px;
+        rotate: 10deg;
     }
 }
