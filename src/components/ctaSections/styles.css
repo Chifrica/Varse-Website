@@ -100,13 +100,13 @@
     }
 
     .cta-sections-header h1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-top: -5%;
     }
 
     .cta-sections-header p {
         font-size: 0.7rem;
-        margin-top: -4%;
+        margin-top: 1%;
     }
 
     .cta-sections-header img {

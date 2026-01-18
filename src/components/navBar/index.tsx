@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './styles.css';
 import logo from '../../assets/logo.png'
+import { Menu, X } from 'lucide-react';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,11 +14,9 @@ const NavBar = () => {
         <header className="navbar">
             <img src={logo} alt="Varse Logo" className="navbar-logo" height={50} width={50} />
 
-            {/* Hamburger Menu Icon */}
-            <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
+            {/* Hamburger / Cancel Icon */}
+            <div className="hamburger" onClick={toggleMenu}>
+                {isMenuOpen ? <X size={30} /> : <Menu size={30} />}
             </div>
 
             <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>

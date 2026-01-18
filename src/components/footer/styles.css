@@ -24,7 +24,8 @@
 
 /* LOGO */
 .footerLogo {
-    width: 140px;
+    height: 100px;
+    width: 100px;
     flex-shrink: 0;
 }
 
@@ -33,7 +34,7 @@
     display: flex;
     gap: 80px;
     flex: 1;
-
+    /* justify-content: flex-start; */
 }
 
 /* HEADINGS */
@@ -75,6 +76,11 @@
     margin-top: 10px;
 }
 
+.socials img {
+    height: 20px;
+    width: 20px;
+}
+
 .socials li {
     padding: 6px 12px;
     border-radius: 20px;
@@ -105,7 +111,6 @@
 @media (max-width: 768px) {
     .footer {
         margin-top: 20%;
-
     }
 
     .footerHr {
@@ -118,14 +123,14 @@
 
     .footerMain {
         flex-direction: column;
-        gap: 1px;
-        text-align: center;
-        justify-content: space-between;
+        gap: 40px;
+        text-align: left;
+        align-items: flex-start;
     }
 
     /* LOGO AT TOP */
     .footerLogo {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         margin-top: -10%;
         height: 100px;
         width: 100px;
@@ -134,8 +139,11 @@
     /* KEEP THREE SECTIONS IN A ROW */
     .footerLinks {
         width: 100%;
-        justify-content: space-between;
-        gap: 20px;
+        justify-content: flex-start;
+        gap: 40px;
+        flex-wrap: wrap;
+        text-align: left;
+        margin-top: -30px;
     }
 
     .footerLinks h1 {
@@ -144,5 +152,10 @@
 
     .footerLinks li {
         font-size: 0.85rem;
+    }
+
+    .footer .contacts {
+        display: flex;
+        gap: 40px;
     }
 }

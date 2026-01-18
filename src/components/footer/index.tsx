@@ -33,19 +33,22 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div>
-                        <h1>Contacts</h1>
-                        <ul className="contactList">
-                            <li><span><Mail size={18} /></span> Varse248@gmail.com</li>
-                            <li><span><Phone size={18} /></span> +234-90-2121-1789</li>
-                        </ul>
-
-                        <h1>Follow Us</h1>
-                        <ul className="socials">
-                            <li><img src={facebook} alt="" /></li>
-                            <li><img src={instagram} alt="" /></li>
-                            <li><img src={whatsapp} alt="" /></li>
-                        </ul>
+                    <div className='contacts'>
+                        <div>
+                            <h1>Contacts</h1>
+                            <ul className="contactList">
+                                <li><span><Mail size={18} /></span> Varse248@gmail.com</li>
+                                <li><span><Phone size={18} /></span> +234-90-2121-1789</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h1>Follow Us</h1>
+                            <ul className="socials">
+                                <li><img src={facebook} alt="" /></li>
+                                <li><img src={instagram} alt="" /></li>
+                                <li><img src={whatsapp} alt="" /></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
