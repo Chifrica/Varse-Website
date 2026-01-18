@@ -4,6 +4,7 @@ import Features from './components/features'
 import HowItWorks from './components/howItWorks'
 import Testimonials from './components/testimonials'
 import CtaSections from './components/ctaSections'
+import Footer from './components/footer'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <HowItWorks />
       <Testimonials />
       <CtaSections />
+      <Footer />
     </>
   )
 }

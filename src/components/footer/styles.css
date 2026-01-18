@@ -1,0 +1,136 @@
+.footer {
+    width: 100%;
+    background: #fff;
+    color: #111;
+    margin-top: 20%;
+}
+
+/* EDGE-TO-EDGE HR */
+.footerHr {
+    width: 100%;
+    border: none;
+    border-top: 5px solid #eee;
+    /* margin-top: 20%; */
+    margin-bottom: -10px;
+}
+
+/* MAIN CONTENT */
+.footerMain {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 6%;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+/* LOGO */
+.footerLogo {
+    width: 140px;
+    flex-shrink: 0;
+    margin-top: -10%;
+}
+
+/* LINKS AREA */
+.footerLinks {
+    display: flex;
+    gap: 80px;
+    flex: 1;
+}
+
+/* HEADINGS */
+.footerLinks h1 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+/* LISTS */
+.footerLinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* align-items: left; */
+}
+
+.footerLinks li {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footerLinks li:hover {
+    color: #ff8800;
+}
+
+/* CONTACT ICONS */
+.contactList span {
+    color: #ff8800;
+    margin-right: 8px;
+}
+
+/* SOCIAL ICONS */
+.socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.socials li {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ff8800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff8800;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.socials li:hover {
+    background: #ff8800;
+    color: #fff;
+}
+
+/* BOTTOM TEXT */
+.footerBottom {
+    text-align: center;
+    padding: 24px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* -------------------- */
+/* MOBILE RESPONSIVE */
+/* -------------------- */
+@media (max-width: 768px) {
+    .footerMain {
+        flex-direction: column;
+        gap: 1px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    /* LOGO AT TOP */
+    .footerLogo {
+        margin-bottom: 20px;
+    }
+
+    /* KEEP THREE SECTIONS IN A ROW */
+    .footerLinks {
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .footerLinks h1 {
+        font-size: 1rem;
+    }
+
+    .footerLinks li {
+        font-size: 0.85rem;
+    }
+}
