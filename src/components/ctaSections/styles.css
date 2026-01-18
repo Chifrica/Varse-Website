@@ -1,0 +1,117 @@
+.cta-sections {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    /* allows image to reach bottom */
+    justify-content: space-between;
+    background-color: #ff8800;
+    color: #fff;
+    border-radius: 24px;
+    margin: 50px auto;
+    padding: 60px;
+    padding-bottom: 0%;
+
+    max-width: 1000px;
+    overflow: hidden;
+    /* clips image at bottom */
+    gap: 60px;
+}
+
+/* PHONE IMAGE */
+.cta-sections>img {
+    height: 100%;
+    max-height: 420px;
+    align-self: flex-end;
+    /* pushes image to bottom */
+    object-fit: contain;
+}
+
+/* TEXT CONTENT */
+.cta-sections-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -18%;
+    max-width: 520px;
+}
+
+.cta-sections-header h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.cta-sections-header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    margin-bottom: 32px;
+}
+
+/* APP STORE IMAGE */
+.cta-sections-header img {
+    width: 280px;
+    max-width: 100%;
+}
+
+/* -------------------- */
+/* RESPONSIVE DESIGN */
+/* -------------------- */
+@media (max-width: 900px) {
+    .cta-sections {
+        padding: 32px;
+        gap: 24px;
+        margin: 20px 20px;
+    }
+
+    .cta-sections>img {
+        max-height: 260px;
+    }
+
+    .cta-sections-header {
+        margin-top: 0;
+        max-width: 100%;
+        margin-bottom: 0%;
+    }
+
+    .cta-sections-header h1 {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .cta-sections-header p {
+        font-size: 0.5rem;
+    }
+
+    .cta-sections-header img {
+        width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-sections {
+        padding: 24px;
+        gap: 16px;
+        padding-bottom: 0%;
+    }
+
+    .cta-sections>img {
+        max-height: 120px;
+    }
+
+    .cta-sections-header h1 {
+        font-size: 1rem;
+        margin-top: -5%;
+    }
+
+    .cta-sections-header p {
+        font-size: 0.7rem;
+        margin-top: -4%;
+    }
+
+    .cta-sections-header img {
+        width: 200px;
+        margin-top: -20px;
+        margin-bottom: 0%;
+    }
+}

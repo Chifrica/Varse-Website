@@ -3,6 +3,7 @@ import Hero from './components/hero'
 import Features from './components/features'
 import HowItWorks from './components/howItWorks'
 import Testimonials from './components/testimonials'
+import CtaSections from './components/ctaSections'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Features />
       <HowItWorks />
       <Testimonials />
+      <CtaSections />
     </>
   )
 }
