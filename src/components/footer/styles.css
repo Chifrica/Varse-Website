@@ -2,16 +2,14 @@
     width: 100%;
     background: #fff;
     color: #111;
-    margin-top: 20%;
 }
 
 /* EDGE-TO-EDGE HR */
 .footerHr {
     width: 100%;
     border: none;
-    border-top: 5px solid #eee;
-    /* margin-top: 20%; */
-    margin-bottom: -10px;
+    border-top: 3px solid #eee;
+
 }
 
 /* MAIN CONTENT */
@@ -20,7 +18,7 @@
     margin: 0 auto;
     padding: 60px 6%;
     display: flex;
-    gap: 80px;
+    gap: 30%;
     align-items: flex-start;
 }
 
@@ -28,7 +26,6 @@
 .footerLogo {
     width: 140px;
     flex-shrink: 0;
-    margin-top: -10%;
 }
 
 /* LINKS AREA */
@@ -36,6 +33,7 @@
     display: flex;
     gap: 80px;
     flex: 1;
+
 }
 
 /* HEADINGS */
@@ -73,20 +71,18 @@
 /* SOCIAL ICONS */
 .socials {
     display: flex;
-    gap: 12px;
+    /* gap: 12px; */
     margin-top: 10px;
 }
 
 .socials li {
-    width: 36px;
-    height: 36px;
-    border: 1px solid #ff8800;
-    border-radius: 50%;
+    padding: 6px 12px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ff8800;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: all 0.2s ease;
 }
 
@@ -98,7 +94,7 @@
 /* BOTTOM TEXT */
 .footerBottom {
     text-align: center;
-    padding: 24px 0;
+    padding: 5px 0;
     font-size: 0.9rem;
     color: #666;
 }
@@ -107,6 +103,19 @@
 /* MOBILE RESPONSIVE */
 /* -------------------- */
 @media (max-width: 768px) {
+    .footer {
+        margin-top: 20%;
+
+    }
+
+    .footerHr {
+        width: 100%;
+        border: none;
+        border-top: 5px solid #eee;
+        /* margin-top: 20%; */
+        margin-bottom: -10px;
+    }
+
     .footerMain {
         flex-direction: column;
         gap: 1px;
@@ -117,6 +126,7 @@
     /* LOGO AT TOP */
     .footerLogo {
         margin-bottom: 20px;
+        margin-top: -10%;
     }
 
     /* KEEP THREE SECTIONS IN A ROW */

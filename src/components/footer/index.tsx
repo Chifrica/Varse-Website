@@ -1,5 +1,9 @@
 import './styles.css'
 import logo from '../../assets/logo.png'
+import { Mail, Phone } from 'lucide-react'
+import facebook from '../../assets/facebook.png'
+import instagram from '../../assets/icons_instagram.png'
+import whatsapp from '../../assets/whatsapp-icon.png'
 
 const Footer = () => {
     return (
@@ -32,15 +36,15 @@ const Footer = () => {
                     <div>
                         <h1>Contacts</h1>
                         <ul className="contactList">
-                            <li><span>📧</span> Varse248@gmail.com</li>
-                            <li><span>📞</span> +234-90-2121-1789</li>
+                            <li><span><Mail size={18} /></span> Varse248@gmail.com</li>
+                            <li><span><Phone size={18} /></span> +234-90-2121-1789</li>
                         </ul>
 
                         <h1>Follow Us</h1>
                         <ul className="socials">
-                            <li>📘</li>
-                            <li>💬</li>
-                            <li>🔗</li>
+                            <li><img src={facebook} alt="" /></li>
+                            <li><img src={instagram} alt="" /></li>
+                            <li><img src={whatsapp} alt="" /></li>
                         </ul>
                     </div>
                 </div>
