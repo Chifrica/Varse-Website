@@ -51,8 +51,10 @@
 /* USER INFO (LEFT) */
 .testimonial-user {
     display: flex;
-    gap: 12px;
+    gap: 2px;
     min-width: 140px;
+    flex-direction: column;
+    margin-right: -20%;
 }
 
 .testimonial-user img {
@@ -98,12 +100,8 @@
     }
 
     .testimonial-card {
-        flex-direction: column;
+        flex-direction: row;
         gap: 16px;
-    }
-
-    .testimonial-user {
-        align-items: center;
     }
 
     .testimonial-text {
