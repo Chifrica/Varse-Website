@@ -1,9 +1,6 @@
 import './styles.css'
 import logo from '../../assets/logo.png'
 import { Mail, Phone } from 'lucide-react'
-import facebook from '../../assets/facebook.png'
-import instagram from '../../assets/icons_instagram.png'
-import whatsapp from '../../assets/whatsapp-icon.png'
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
 const Footer = () => {
