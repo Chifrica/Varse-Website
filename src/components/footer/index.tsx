@@ -4,6 +4,7 @@ import { Mail, Phone } from 'lucide-react'
 import facebook from '../../assets/facebook.png'
 import instagram from '../../assets/icons_instagram.png'
 import whatsapp from '../../assets/whatsapp-icon.png'
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
 const Footer = () => {
     return (
@@ -44,9 +45,9 @@ const Footer = () => {
                         <div>
                             <h1>Follow Us</h1>
                             <ul className="socials">
-                                <li><img src={facebook} alt="" /></li>
-                                <li><img src={instagram} alt="" /></li>
-                                <li><img src={whatsapp} alt="" /></li>
+                                <li><FaFacebook size={30} color="#3b5998" /></li>
+                                <li><FaInstagram size={30} color="#E1306C" /></li>
+                                <li><FaWhatsapp size={30} color="#25D366" /></li>
                             </ul>
                         </div>
                     </div>
