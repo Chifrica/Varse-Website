@@ -31,20 +31,20 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className='contacts'>
+                    <div className='contacts' id='#contact'>
                         <div>
                             <h1>Contacts</h1>
                             <ul className="contactList">
-                                <li><span><Mail size={18} /></span> Varse248@gmail.com</li>
-                                <li><span><Phone size={18} /></span> +234-90-2121-1789</li>
+                                <a href="mailto:varseafrica@gmail.com"><li><span><Mail size={18} /></span>varseafrica@gmail.com</li></a>
+                                <a href="tel:09021211789"><li><span><Phone size={18} /></span> +234-90-2121-1789</li></a>
                             </ul>
                         </div>
                         <div>
                             <h1>Follow Us</h1>
                             <ul className="socials">
-                                <li><FaFacebook size={30} color="#3b5998" /></li>
-                                <li><FaInstagram size={30} color="#E1306C" /></li>
-                                <li><FaWhatsapp size={30} color="#25D366" /></li>
+                                <a href="#"><li><FaFacebook size={30} color="#3b5998" /></li></a>
+                                <a href="#"><li><FaInstagram size={30} color="#E1306C" /></li></a>
+                                <a href="https://wa.link/7jporw"><li><FaWhatsapp size={30} color="#25D366" /></li></a>
                             </ul>
                         </div>
                     </div>
