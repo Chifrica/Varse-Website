@@ -43,7 +43,7 @@ const Footer = () => {
                             <h1>Follow Us</h1>
                             <ul className="socials">
                                 <a href="#"><li><FaFacebook size={30} color="#3b5998" /></li></a>
-                                <a href="#"><li><FaInstagram size={30} color="#E1306C" /></li></a>
+                                <a href="https://www.instagram.com/reel/DRKVdKqCK-P/?igsh=MTVxdnoxbnVxNGhwcg=="><li><FaInstagram size={30} color="#E1306C" /></li></a>
                                 <a href="https://wa.link/7jporw"><li><FaWhatsapp size={30} color="#25D366" /></li></a>
                             </ul>
                         </div>
