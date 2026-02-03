@@ -36,7 +36,7 @@ const Footer = () => {
                             <h1>Contacts</h1>
                             <ul className="contactList">
                                 <a href="mailto:varseafrica@gmail.com"><li><span><Mail size={18} /></span>varseafrica@gmail.com</li></a>
-                                <a href="tel:09021211789"><li><span><Phone size={18} /></span> +234-90-2121-1789</li></a>
+                                <a href="tel:07018353543"><li><span><Phone size={18} /></span> +234-7018-353-543</li></a>
                             </ul>
                         </div>
                         <div>
